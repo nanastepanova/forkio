@@ -1,0 +1,32 @@
+{
+  "name": "forkio",
+  "version": "1.0.0",
+  "description": "Сверстать макет psd",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-js-minify": "0.0.3",
+    "gulp-sass": "^4.0.1",
+    "gulp-uglify": "^3.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nanastepanova/forkio.git"
+  },
+  "author": "Nataliia Stepanova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nanastepanova/forkio/issues"
+  },
+  "homepage": "https://github.com/nanastepanova/forkio#readme"
+}
