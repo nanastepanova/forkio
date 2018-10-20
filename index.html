@@ -7,12 +7,9 @@
     <title>FORKIO</title>
     <link rel="stylesheet" href="dist/css/reset.css">
     <link rel="stylesheet" href="dist/css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,700i" rel="stylesheet">
     <link href=“https://fonts.googleapis.com/css?family=Lato:400,700%7CMontserrat:400,700%7CSource+Sans+Pro:400,700” rel=“stylesheet”>
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+          integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 
 </head>
 <body>
@@ -120,12 +117,82 @@
 
 
 <section class="reviews container">
-    <div class="carusel">
-        <div class="social__links">
+    <div id="carousel_prev" class="carousel__btn">
+        <i class="fas fa-chevron-left"></i>
+    </div>
 
+    <div id="carousel" class="carousel_inner">
+        <div class="carousel-box">
+            <div class="carousel-box__img"></div>
+            <div class="carousel-box__user-name">Steven Strange</div>
+            <div class="carousel-box__user-login">@DoctorS</div>
+            <div class="carousel-box__user-comment">@Pixelbuddha Suspendisse sodales sem est, in scelerisque felis
+                    scelerisque in. Aenean faucibus mollis risus. Praesent sit amet erat eget eros.
+                </div>
+            <div class="carousel-box__comment-time">2 hours ago</div>
+        </div>
+        <div class="carousel-box">
+            <div class="carousel-box__img"></div>
+            <div class="carousel-box__user-name">Anna Broky</div>
+            <div class="carousel-box__user-login">@AnnaB</div>
+            <div class="carousel-box__user-comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Accusamus adipisci aliquam amet dignissimos, dolore dolores facilis id itaque labore laborum quae
+                    quidem quos reiciendis rem sed voluptatem voluptatum! Enim iste maiores molestias quo voluptatem!
+                </div>
+            <div class="carousel-box__comment-time">1 month ago</div>
+        </div>
+        <div class="carousel-box">
+            <div class="carousel-box__img"></div>
+            <div class="carousel-box__user-name">Lora Marks</div>
+            <div class="carousel-box__user-login">@MaLo</div>
+            <div class="carousel-box__user-comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                aspernatur assumenda delectus, dolor doloribus enim explicabo iste libero neque nostrum, omnis
+                quidem vel.
+            </div>
+            <div class="carousel-box__comment-time">7 hours ago</div>
+        </div>
+        <div class="carousel-box">
+            <div class="carousel-box__img"></div>
+            <div class="carousel-box__user-name">Dan Wilson</div>
+            <div class="carousel-box__user-login">@Danny</div>
+            <div class="carousel-box__user-comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
+                amet delectus doloremque eaque excepturi expedita illo ipsam nam perspiciatis praesentium. Amet
+                animi assumenda corporis delectus dolores eaque esse, expedita fugiat, id illum incidunt natus
+                nesciunt nihil quae reiciendis repudiandae tempore vitae?
+            </div>
+            <div class="carousel-box__comment-time">13 hours ago</div>
+        </div>
+        <div class="carousel-box">
+            <div class="carousel-box__img"></div>
+            <div class="carousel-box__user-name">Andrue Sin</div>
+            <div class="carousel-box__user-login">@Sin</div>
+            <div class="carousel-box__user-comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Deserunt nemo quis sapiente? Aliquid architecto culpa ducimus iste, laudantium quos sed.
+            </div>
+            <div class="carousel-box__comment-time">2 days ago</div>
         </div>
     </div>
 
+    <div id="carousel_next" class="carousel__btn">
+        <i class="fas fa-chevron-right"></i>
+    </div>
+
+    <hr>
+
+    <div class="social__links">
+        <div class="social__links-gitHub">
+            <a href="#" class="button_gitHub"><i class="fab fa-github"></i></a>
+            <div class="followers">7 352 Followers</div>
+        </div>
+        <div class="social__links-twitter">
+            <a href="#" class="button_twitter"><i class="fab fa-twitter"></i></a>
+            <div class="followers">136 312 Followers</div>
+        </div>
+        <div class="social__links-facebook">
+            <a href="#" class="button_facebook"><i class="fab fa-facebook-f"></i></a>
+            <div class="followers">218 092 Subscribers</div>
+        </div>
+    </div>
 </section>
 
 
@@ -151,6 +218,7 @@
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="dist/js/jq.carousel.js"></script>
 <script src="dist/js/script.js"></script>
 
 </body>
