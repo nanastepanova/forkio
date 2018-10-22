@@ -1,0 +1,130 @@
+.pricing{
+  padding-top: 73px;
+  padding-bottom: 149px;
+  background: url("/src/img/back_pricing.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  font-family: $font-monserrat;
+  &__title{
+    font-weight: 700;
+    margin-bottom: 122px;
+  }
+  &__block{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 122px;
+  }
+  &__section{
+    display: inline-block;
+  }
+  &___haeder{
+      background-color: #735f6b;
+      width: 257px;
+  }
+  &___class{
+    font-weight: 400;
+    font-size: 24px;
+  }
+  &__body{
+    //height: 457px;
+    padding-bottom: 38px;
+    padding-top: 32px;
+    background-color: rgba(255, 255, 255, 0.11);
+  }
+  &__doll{
+    display: inline-block;
+    font-size: 60px;
+  }
+  &__cost{
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    display: inline-block;
+  }
+  &__month{
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #968890;
+    display: block;
+  }
+  &__line{
+    background-color:  #8d81ac;
+    width: 60px;
+    height: 5px;
+    margin: 0 auto 31px;
+  }
+  &__text{
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
+  }
+  &__btn{
+    background-color: #7c6d7d;
+    padding: 16px 37px;
+    border-radius: 35px;
+    display: inline-block;
+    margin-top: 37px;
+    transition: 0.5s;
+  }
+  .purchase__btn{
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+  }
+  &__btn:hover{
+    background-color: #9b8c9c;
+  }
+}
+
+.active{
+  position: relative;
+
+.pricing___haeder{
+    background-color: #735f6b;
+    width: 257px;
+}
+
+}
+
+
+
+
+
+@media screen and (min-width: 360px){
+  .pricing {
+    font-size: 28px;
+    padding-bottom: 53px;
+    line-height: 65px;
+  }
+}
+@media screen and (min-width: 401px){
+  .pricing{
+    font-size: 42px;
+    padding-bottom: 57px;
+    line-height: 65px;
+  }
+
+}
+@media screen and (min-width: 481px){
+  .pricing{
+    font-size: 42px;
+    padding-bottom: 47px;
+  }
+
+}
+@media screen and (min-width: 993px){
+  .pricing{
+    font-size: 48px;
+    padding-bottom: 122px;
+  }
+
+}
+@media screen and (min-width: 1201px){
+
+}

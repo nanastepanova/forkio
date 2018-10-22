@@ -1,0 +1,191 @@
+.editor{
+  &__trial{
+    color:  $gray;
+    font-family: $font-monserrat;
+    text-align: center;
+    margin-top: 48px;
+  }
+  &__title{
+    color: $violet-dark;
+    font-family: $font-monserrat;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  &__text{
+    color: $black;
+    font-family: $font-lato;
+    text-align: center;
+    font-size: 21px;
+    margin-top: 38px;
+  }
+}
+.interaction{
+  display: flex;
+  justify-content: center;
+  margin-top: 36px;
+  flex-wrap: wrap;
+  &__btn{
+    width: 80px;
+    height: 26px;
+    border: #dedede 1px solid;
+    background-color: $black-light;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    //display: inline-block;
+    padding: 0 auto;
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .fas, .far{
+    margin-right: 3px;
+    //display: flex;
+    //justify-content: center;
+  }
+  &__text{
+    display: inline-block;
+    font-family: $font-monserrat;
+    font-weight: 700;
+  }
+  &__count{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #dedede 1px solid;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 26px;
+    margin-left: 0;
+    position: relative;
+    left: -1px;
+  }
+  &__number{
+    font-family: $font-monserrat;
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  &__watch{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  &__star{
+    margin-right: 15px;
+    margin-left: 15px;
+    display: flex;
+    justify-content: center;
+
+  }
+  &__fork{
+    display: flex;
+    justify-content: center;
+  }
+
+  &__number:hover{
+    color: blue;
+  }
+  &__btn:hover{
+    background-color: #b3aac4;
+  }
+}
+
+
+
+
+@media screen and (min-width: 360px){
+  .editor{
+    margin-bottom: 88px;
+    &__trial{
+      margin-top: 35px;
+    }
+    &__title{
+      font-size: 26px;
+      line-height: 43px;
+       margin-top: 72px;
+    }
+    &__text{
+      font-size: 14px;
+      line-height: 30px;
+      margin-top: 24px;
+    }
+  }
+
+}
+@media screen and (min-width: 401px){
+  .editor{
+    margin-bottom: 78px;
+    &__title{
+      font-size: 42px;
+      line-height: 50px;
+      //margin-top: 72px;
+    }
+    &__text{
+      font-size: 16px;
+      line-height: 30px;
+      margin-top: 54px;
+    }
+  }
+}
+@media screen and (min-width: 481px){
+  .editor{
+    margin-bottom: 98px;
+    &__title{
+      //font-size: 42px;
+      //line-height: 35px;
+      margin-top: 94px;
+    }
+    &__text{
+      line-height: 30px;
+    }
+  }
+}
+@media screen and (min-width: 993px){
+  .editor{
+    margin-bottom: 70px;
+    &__title{
+      font-size: 54px;
+      //line-height: 35px;
+      margin-top: 67px;
+    }
+    &__text{
+      line-height: 30px;
+    }
+  }
+}
+@media screen and (min-width: 1201px){
+
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 360px){
+
+}
+@media screen and (min-width: 401px){
+
+}
+@media screen and (min-width: 481px){
+
+}
+@media screen and (min-width: 993px){
+
+}
+@media screen and (min-width: 1201px){
+
+}
