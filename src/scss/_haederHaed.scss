@@ -2,11 +2,10 @@
   background: url("/src/img/img.png") no-repeat;
   background-size: cover;
   background-position: center;
-  //height: 800px;
   padding-bottom: 487px;
 }
 .header__title{
-  font-weight: 700;
+  font-weight: $font-weight-bold;
   color: white;
   font-family: $font-montserrat;
   text-transform: uppercase;
@@ -25,7 +24,7 @@
 }
 .download__btn{
   font-family: $font-montserrat;
-  font-weight: 700;
+  font-weight: $font-weight-bold;
   color: #ffffff;
   font-size: 21px;
   margin: 23px 64px;
@@ -42,8 +41,7 @@
 .purple__btn:hover{
   background-color: white;
   border: $violet-light 1px solid;
-  //box-sizing: border-box;
-  .download__btn{
+    .download__btn{
     color: $violet-light;
   }
 
@@ -132,6 +130,5 @@
 
 @media screen and (min-width: 1201px) {
   .header__title{
-
   }
 }
