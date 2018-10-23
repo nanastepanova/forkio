@@ -1,13 +1,13 @@
 .editor{
   &__trial{
     color:  $gray;
-    font-family: $font-monserrat;
+    font-family: $font-montserrat;
     text-align: center;
     margin-top: 48px;
   }
   &__title{
     color: $violet-dark;
-    font-family: $font-monserrat;
+    font-family: $font-montserrat;
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
@@ -48,7 +48,7 @@
   }
   &__text{
     display: inline-block;
-    font-family: $font-monserrat;
+    font-family: $font-montserrat;
     font-weight: 700;
   }
   &__count{
@@ -64,7 +64,7 @@
     left: -1px;
   }
   &__number{
-    font-family: $font-monserrat;
+    font-family: $font-montserrat;
     margin: 0 5px;
     display: flex;
     justify-content: center;
