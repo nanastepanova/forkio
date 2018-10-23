@@ -1,0 +1,50 @@
+.callback {
+  background-color: #f4f4f4;
+  padding-top: 30px;
+  padding-bottom: 42px;
+  & h2 {
+    font-family: $font-montserrat;
+    font-weight: $font-weight-bold;
+    color: $black;
+    font-size: 24px;
+    text-align: center;
+    @media screen and (max-width: 400px) {
+      width: 70%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+  & form {
+    margin-top: 24px;
+    margin-bottom: 42px;
+    @media screen and (max-width: 400px) {
+      @include flex-column-center;
+    }
+  }
+&__input {
+    width: 290px;
+    padding: 16px 26px;
+    margin-top: 15px;
+    font-family: $font-montserrat;
+    font-weight: $font-weight-normal;
+    color: #c8cbcf;
+    font-size: 14px;
+    text-align: left;
+    border-radius: 21px;
+    background-color: $white;
+    border: none;
+  }
+  &__btn {
+    width: 140px;
+    padding: 16px 32px;
+    margin-top: 21px;
+    font-family: $font-montserrat;
+    font-weight: $font-weight-normal;
+    color: $white;
+    font-size: 13px;
+    text-align: left;
+    border-radius: 21px;
+    background-color: $violet-light;
+    border: none;
+  }
+}

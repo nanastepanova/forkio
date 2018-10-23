@@ -6,10 +6,11 @@
 
     <title>FORKIO</title>
     <link rel="stylesheet" href="dist/css/reset.css">
+    <link href="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="dist/css/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:400,700|Source+Sans+Pro:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,700i|Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+          integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 
 </head>
 <body>
@@ -20,7 +21,6 @@
             <img class="navbar_logo" src="/src/img/Logo.png" alt="logo">
             <span class="logo__text">FORKIO</span>
         </div>
-
 
 
         <div class="purple__btn">
@@ -42,7 +42,7 @@
                 <div class="burger-long"></div>
             </div>
             <div class="menu_btn close-menu">
-                <i id="menu_close"class="fas fa-times"></i>
+                <i id="menu_close" class="fas fa-times"></i>
             </div>
 
 
@@ -129,80 +129,100 @@
 </section>
 
 
-<section class="reviews container">
-    <div id="carousel_prev" class="carousel__btn">
-        <i class="fas fa-chevron-left"></i>
-    </div>
+<section class="reviews">
+    <div class="container">
+        <div id="carousel_prev" class="carousel__btn">
+            <i class="fas fa-chevron-left"></i>
+        </div>
 
-    <div id="carousel" class="carousel_inner">
-        <div class="carousel-box">
-            <div class="carousel-box__img"></div>
-            <div class="carousel-box__user-name">Steven Strange</div>
-            <div class="carousel-box__user-login">@DoctorS</div>
-            <div class="carousel-box__user-comment">@Pixelbuddha Suspendisse sodales sem est, in scelerisque felis
+        <div class="owl-carousel carousel">
+            <div class="carousel-box">
+                <div class="carousel-box__user-info">
+                    <div class="carousel-box__img"><img src="dist/img/reviews/layer2.png"></div>
+                    <div>
+                        <div class="carousel-box__user-name">Steven Strange</div>
+                        <div class="carousel-box__user-login">@DoctorS</div>
+                    </div>
+                </div>
+                <div class="carousel-box__user-comment">@Pixelbuddha Suspendisse sodales sem est, in scelerisque felis
                     scelerisque in. Aenean faucibus mollis risus. Praesent sit amet erat eget eros.
                 </div>
-            <div class="carousel-box__comment-time">2 hours ago</div>
-        </div>
-        <div class="carousel-box">
-            <div class="carousel-box__img"></div>
-            <div class="carousel-box__user-name">Anna Broky</div>
-            <div class="carousel-box__user-login">@AnnaB</div>
-            <div class="carousel-box__user-comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                <div class="carousel-box__comment-time">2 hours ago</div>
+            </div>
+
+            <div class="carousel-box">
+                <div class="carousel-box__user-info">
+                    <div class="carousel-box__img"><img src="dist/img/reviews/layer1.png"></div>
+                    <div>
+                        <div class="carousel-box__user-name">Anna Broky</div>
+                        <div class="carousel-box__user-login">@AnnaB</div>
+                    </div>
+                </div>
+                <div class="carousel-box__user-comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Accusamus adipisci aliquam amet dignissimos, dolore dolores facilis id itaque labore laborum quae
                     quidem quos reiciendis rem sed voluptatem voluptatum! Enim iste maiores molestias quo voluptatem!
                 </div>
-            <div class="carousel-box__comment-time">1 month ago</div>
-        </div>
-        <div class="carousel-box">
-            <div class="carousel-box__img"></div>
-            <div class="carousel-box__user-name">Lora Marks</div>
-            <div class="carousel-box__user-login">@MaLo</div>
-            <div class="carousel-box__user-comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
-                aspernatur assumenda delectus, dolor doloribus enim explicabo iste libero neque nostrum, omnis
-                quidem vel.
+                <div class="carousel-box__comment-time">1 month ago</div>
             </div>
-            <div class="carousel-box__comment-time">7 hours ago</div>
-        </div>
-        <div class="carousel-box">
-            <div class="carousel-box__img"></div>
-            <div class="carousel-box__user-name">Dan Wilson</div>
-            <div class="carousel-box__user-login">@Danny</div>
-            <div class="carousel-box__user-comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
-                amet delectus doloremque eaque excepturi expedita illo ipsam nam perspiciatis praesentium. Amet
-                animi assumenda corporis delectus dolores eaque esse, expedita fugiat, id illum incidunt natus
-                nesciunt nihil quae reiciendis repudiandae tempore vitae?
+
+            <div class="carousel-box">
+                <div class="carousel-box__user-info">
+                    <div class="carousel-box__img"><img src="dist/img/reviews/layer4.png"></div>
+                    <div>
+                        <div class="carousel-box__user-name">Lora Marks</div>
+                        <div class="carousel-box__user-login">@MaLo</div>
+                    </div>
+                </div>
+                <div class="carousel-box__user-comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A
+                    aspernatur assumenda delectus, dolor doloribus enim explicabo iste libero neque nostrum, omnis
+                    quidem vel.
+                </div>
+                <div class="carousel-box__comment-time">7 hours ago</div>
             </div>
-            <div class="carousel-box__comment-time">13 hours ago</div>
-        </div>
-        <div class="carousel-box">
-            <div class="carousel-box__img"></div>
-            <div class="carousel-box__user-name">Andrue Sin</div>
-            <div class="carousel-box__user-login">@Sin</div>
-            <div class="carousel-box__user-comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Deserunt nemo quis sapiente? Aliquid architecto culpa ducimus iste, laudantium quos sed.
+
+            <div class="carousel-box">
+                <div class="carousel-box__user-info">
+                    <div class="carousel-box__img"><img src="dist/img/reviews/layer3.png"></div>
+                    <div>
+                        <div class="carousel-box__user-name">Dan Wilson</div>
+                        <div class="carousel-box__user-login">@Danny</div>
+                    </div>
+                </div>
+                <div class="carousel-box__user-comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab
+                    amet delectus doloremque eaque excepturi expedita illo ipsam nam perspiciatis praesentium. Amet
+                    animi assumenda corporis delectus dolores eaque esse, expedita fugiat, id illum incidunt natus
+                    nesciunt nihil quae reiciendis repudiandae tempore vitae?
+                </div>
+                <div class="carousel-box__comment-time">13 hours ago</div>
             </div>
-            <div class="carousel-box__comment-time">2 days ago</div>
+
+            <div class="carousel-box">
+                <div class="carousel-box__user-info">
+                    <div class="carousel-box__img"><img src="dist/img/reviews/layer5.png"></div>
+                    <div>
+                        <div class="carousel-box__user-name">Sandra Sin</div>
+                        <div class="carousel-box__user-login">@Sin</div>
+                    </div>
+                </div>
+                <div class="carousel-box__user-comment">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Deserunt nemo quis sapiente? Aliquid architecto culpa ducimus iste, laudantium quos sed.
+                </div>
+                <div class="carousel-box__comment-time">2 days ago</div>
+            </div>
         </div>
-    </div>
 
-    <div id="carousel_next" class="carousel__btn">
-        <i class="fas fa-chevron-right"></i>
-    </div>
+        <div id="carousel_next" class="carousel__btn">
+            <i class="fas fa-chevron-right"></i>
+        </div>
 
-    <hr>
+        <hr class="reviews__line">
 
-    <div class="social__links">
-        <div class="social__links-gitHub">
-            <a href="#" class="button_gitHub"><i class="fab fa-github"></i></a>
+        <div class="social-links">
+            <a href="#" class="social-links__github"><i class="fab fa-github"></i>GitHub</a>
             <div class="followers">7 352 Followers</div>
-        </div>
-        <div class="social__links-twitter">
-            <a href="#" class="button_twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-links__twitter"><i class="fab fa-twitter"></i>Twitter</a>
             <div class="followers">136 312 Followers</div>
-        </div>
-        <div class="social__links-facebook">
-            <a href="#" class="button_facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-links__facebook"><i class="fab fa-facebook-f"></i>Facebook</a>
             <div class="followers">218 092 Subscribers</div>
         </div>
     </div>
@@ -229,7 +249,7 @@
                 <span class="pricing__month">per month</span>
                 <div class="pricing__line"></div>
                 <p class="pricing__text">Personal License</p>
-                <p class="pricing__text">  gg</p>
+                <p class="pricing__text"> gg</p>
                 <div class="pricing__btn">
                     <a href="" class="purchase__btn">purchase</a>
                 </div>
@@ -287,21 +307,38 @@
 </section>
 
 
-
-<section class="callBack container">
-
-
+<section class="callback">
+    <div class="container">
+        <h2>Subscribe To Stay In Touch</h2>
+        <h2>Order callback</h2>
+        <form>
+            <input class="callback__input" type="text" placeholder="Your name" name="name" maxlength="25" required>
+            <input class="callback__input" type="text" placeholder="Phone" name="phone" maxlength="13" required>
+            <input class="callback__btn" type="submit" value="Subscribe">
+        </form>
+    </div>
 </section>
 
-<footer class="footer container">
 
+<footer class="footer">
+    <div class="container">
+        <div class="footer__logo">
+            <span>Fork</span>
+            <span>io</span>
+        </div>
+        <div class="footer__navigation">
 
+        </div>
+        <div class="footer__telephone"></div>
+        <div class="footer__adress"></div>
+        <div class="footer__info"></div>
+    </div>
 </footer>
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="dist/js/jq.carousel.js"></script>
-<script src="dist/js/script.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+<script src="dist/js/bundle.min.js"></script>
 
 </body>
 </html>
