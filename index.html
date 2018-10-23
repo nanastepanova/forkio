@@ -14,40 +14,40 @@
 
 </head>
 <body>
-<div class="logo"></div>
-<div class="navbar">
-    <ul class="navbar__list">
-        <li class="navbar__list-item"><a href="#"></a>Overview</li>
-        <li class="navbar__list-item"><a href="#"></a>About Fork</li>
-        <li class="navbar__list-item"><a href="#"></a>Buying Options</li>
-        <li class="navbar__list-item"><a href="#"></a>Support</li>
-        <li class="navbar__list-item_blue-bold"><a href="#"></a></li>
-    </ul>
-</div>
-
+<!-----------------------NAV BAR-------------------->
 <header class="navbar container">
     <nav class="navbar__block">
         <div class="logo">
+            <img class="navbar_logo" src="/src/img/Logo.png" alt="logo">
             <span class="logo__text">FORKIO</span>
         </div>
 
+
+
+        <div class="purple__btn">
+            <a href="" class="buy__btn">Buy Now</a>
+        </div>
         <div class="container__menu">
-            <ul class="navbar__list">
+            <ul class="navbar__list none">
                 <li class="navbar__list-item"><a href="#"></a>Overview</li>
                 <li class="navbar__list-item"><a href="#"></a>About Fork</li>
                 <li class="navbar__list-item"><a href="#"></a>Buying Options</li>
                 <li class="navbar__list-item"><a href="#"></a>Support</li>
             </ul>
         </div>
-
-        <div class="purple__btn">
-            <a href="" class="buy__btn">Buy Now</a>
-        </div>
         <div class="menu">
-            <i id="menu_open" class="fas fa-bars"></i>
-            <i id="menu_close" class="fas fa-times"></i>
+            <!--<i id="menu_open" class="fas fa-bars menu_btn "></i>-->
+            <div class="menu_btn burger ">
+                <div class="burger-sort"></div>
+                <div class="burger-long"></div>
+                <div class="burger-long"></div>
+            </div>
+            <div class="menu_btn close-menu">
+                <i id="menu_close"class="fas fa-times"></i>
+            </div>
 
-            <ul class="menu__list">
+
+            <ul class="menu__list none">
                 <li class="menu__list-item"><a href="#"></a>Overview</li>
                 <li class="menu__list-item"><a href="#"></a>About Fork</li>
                 <li class="menu__list-item"><a href="#"></a>Buying Options</li>
@@ -59,52 +59,65 @@
     </nav>
 </header>
 
+<!---------------------HEADER-BLOCK-------------------->
+
 <section class="header__block container">
     <h2 class="header__title">Fork App</h2>
     <h3 class="header__headline">A real gamechanger in the world of web development</h3>
     <p class="header__text">v. 2.8 For Mac and Windows</p>
-    <div class="purple__btn">
-        <a href="" class="download__btn">Download For Free Now</a>
+    <div class="centre__btn">
+        <div class="purple__btn ">
+            <a href="" class="download__btn">Download For Free Now</a>
+        </div>
     </div>
 </section>
+
+<!---------------------EDITOR-------------------->
 
 <section class="editor container">
     <p class="editor__trial">Unlimited 30-Days Trial Period</p>
     <h2 class="editor__title">Revolutionary editor</h2>
-    <p class="editor__text">Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui</p>
+    <p class="editor__text">Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim.
+        Sed id <br> metus id quam auctor molestie eget ut augue.</p>
     <div class="interaction">
-        <div class="interaction__watch">
-            <div>
-                <i class="far fa-eye"></i>
-                <p>Watch</p>
+
+        <div class="interaction">
+            <div class="interaction__watch">
+                <div class="interaction__btn">
+                    <i class="far fa-eye"></i>
+                    <p class="interaction__text">Watch</p>
+                </div>
+                <div class="interaction__count">
+                    <p class="interaction__number">1,397</p>
+                </div>
             </div>
-            <div>
-                <p>1,397</p>
+
+            <div class="interaction__star">
+                <div class="interaction__btn">
+                    <i class="fas fa-star"></i>
+                    <p class="interaction__text">Star</p>
+                </div>
+                <div class="interaction__count">
+                    <p class="interaction__number">21,038</p>
+                </div>
+            </div>
+
+            <div class="interaction__fork">
+                <div class="interaction__btn">
+                    <i class="fas fa-code-branch"></i>
+                    <p class="interaction__text">Fork</p>
+                </div>
+                <div class="interaction__count">
+                    <p class="interaction__number">4,391</p>
+                </div>
             </div>
         </div>
 
-        <div class="interaction__star">
-            <div>
-                <i class="fas fa-star"></i>
-                <p>Star</p>
-            </div>
-            <div>
-                <p>21,038</p>
-            </div>
-        </div>
-
-        <div class="interaction__fork">
-            <div>
-                <i class="fas fa-code-branch"></i>
-                <p>Fork</p>
-            </div>
-            <div>
-                <p>4,391</p>
-            </div>
-        </div>
     </div>
 
 </section>
+
+<!-----------------------------ABOUT----------------->
 
 <section class="about container">
     <div class="about__category">
@@ -222,9 +235,81 @@
 
 </section>
 
+<!-----------------------------PRICING----------------------->
+
 <section class="pricing container">
+    <h2 class="pricing__title">Fork Subscription Pricing</h2>
+    <div class="pricing___block">
+        <div class="pricing__section">
+            <div class="pricing___haeder">
+                <p class="pricing___class">Students</p>
+            </div>
+            <div class="pricing__body">
+                <p class="pricing__doll">$</p>
+                <p class="pricing__cost">29</p>
+                <span class="pricing__month">per month</span>
+                <div class="pricing__line"></div>
+                <p class="pricing__text">Personal License</p>
+                <p class="pricing__text">  gg</p>
+                <div class="pricing__btn">
+                    <a href="" class="purchase__btn">purchase</a>
+                </div>
+            </div>
+        </div>
+        <div class="pricing__section">
+            <div class="pricing___haeder">
+                <p class="pricing___class">professional</p>
+            </div>
+            <div class="pricing__body">
+                <p class="pricing__doll">$</p>
+                <p class="pricing__cost">59</p>
+                <span class="pricing__month">per month</span>
+                <div class="pricing__line"></div>
+                <p class="pricing__text">Personal License</p>
+                <p class="pricing__text">Email Support</p>
+                <div class="pricing__btn">
+                    <a href="" class="purchase__btn">purchase</a>
+                </div>
+            </div>
+        </div>
+        <div class="pricing__section active">
+            <div class="pricing___haeder">
+                <p class="pricing___class">agency</p>
+            </div>
+            <div class="pricing__body">
+                <p class="pricing__doll">$</p>
+                <p class="pricing__cost">99</p>
+                <span class="pricing__month">per month</span>
+                <div class="pricing__line"></div>
+                <p class="pricing__text">1-12 Team Members</p>
+                <p class="pricing__text">Phone Support</p>
+                <div class="pricing__btn">
+                    <a href="" class="purchase__btn">purchase</a>
+                </div>
+            </div>
+        </div>
+        <div class="pricing__section">
+            <div class="pricing___haeder">
+                <p class="pricing___class">agency</p>
+            </div>
+            <div class="pricing__body">
+                <p class="pricing__doll">$</p>
+                <p class="pricing__cost">159</p>
+                <span class="pricing__month">per month</span>
+                <div class="pricing__line"></div>
+                <p class="pricing__text">Unlimited Team Members</p>
+                <p class="pricing__text">24/ 7 Phone Support</p>
+                <div class="pricing__btn">
+                    <a href="" class="purchase__btn">purchase</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
+
+
+<section class="callBack container">
 
 <section class="callback">
     <div class="container">

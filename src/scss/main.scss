@@ -15,6 +15,7 @@
 
 $font-montserrat: "Montserrat", sans-serif;
 $font-lato: "Lato", sans-serif;
+$font-source: "Source Sans Pro", sant-serif;
 $font-weight-bold: 700;
 $font-weight-normal: 400;
 $violet-dark: #635c73;
@@ -47,6 +48,11 @@ $white: #ffffff;
 
 //   imports:
 
+@import "vailet";
+@import "haeder";
+@import "haederHaed";
+@import "editor";
+@import "pricing";
 @import "reviews-section";
 @import "callback-section";
 @import "footer";
