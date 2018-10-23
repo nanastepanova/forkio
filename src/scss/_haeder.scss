@@ -1,24 +1,27 @@
 .container {
   margin: 0 auto;
-}
-.navbar__block{
-  display: flex;
-  flex-wrap: wrap;
-  box-sizing: border-box;
-  align-items: center;
-  justify-content: space-between;
+  &__menu{
+    width: 100%
+  }
 }
 .navbar{
   background-color: #222125;
   padding-top: 30px;
   padding-bottom: 30px;
   font-family: $font-monserrat;
+  &__block{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-between;
+  }
   &__list{
     font-size: 16px;
-    font-weight: 700;
+    font-weight: $font-weight-bold;
     display: flex;
-    justify-content: space-around;
-    margin-top: 22px;
+    justify-content: space-between;
+    align-items: center;
     cursor: pointer;
     &-item{
       transition: 0.5s;
@@ -32,11 +35,10 @@
 .logo{
   display: flex;
   align-items: center;
-  height: 41px;
   cursor: pointer;
   margin-right: 10px;
   &__text{
-    font-weight: 700;
+    font-weight: $font-weight-bold;
     display: inline-block;
     margin-left: 10px;
     transition: 0.5s;
@@ -90,31 +92,33 @@
   }
   .menu_btn{
     display: inline-block;
+    width: 26px;
+    height: 21px;
   }
   .close-menu{
     display: none;
   }
-  .menu_btn{
-    width: 26px;
-    height: 21px;
+  .navbar__list{
+    margin-top: 22px;
   }
   .burger{
     width: 27px;
     height: 21px;
+    margin-bottom: 6px;
     &-long{
-      //display: block;
-      border: none; /* Убираем границу */
-      background-color: #e6e4e4; /* Цвет линии */
-      color: #e6e4e4; /* Цвет линии для IE6-7 */
+      display: block;
+      border: none;
+      background-color: #e6e4e4;
+      color: #e6e4e4;
       height: 4px;
       margin-top: 5px;
       border-radius: 5px;
     }
     &-sort{
       margin-left: 9px;
-      border: none; /* Убираем границу */
-      background-color: #e6e4e4;; /* Цвет линии */
-      color: #e6e4e4; /* Цвет линии для IE6-7 */
+      border: none;
+      background-color: #e6e4e4;;
+      color: #e6e4e4;
       height: 4px;
       width: 18px;
       margin-top: 5px;
@@ -122,8 +126,6 @@
     }
 
   }
-
-
   .navbar{
     &__block{
       justify-content: space-between;
@@ -154,16 +156,6 @@
     display: inline-block;
     font-size: 34px;
     cursor: pointer;
-    //.fa-times{
-    //  display: none;
-    //}
-    //&:hover .fa-bars{
-    //  display: none;
-    //}
-    //&:hover .fa-times{
-    //  display: inline-block;
-    //}
-
     &__list{
       width: 100%;
       line-height: 108px;
@@ -174,12 +166,9 @@
       left: 0;
       top: 101px;
       padding-left: 33px;
-
-
       &-item{
         position: relative;
       }
-
     }
 
     &__list-item:hover{
@@ -204,7 +193,6 @@
       background-color: #303030;
     }
   }
-
   .fas:hover .menu__list{
     display: block;
   }
@@ -232,13 +220,10 @@
   }
 
   .container__menu{
-
     display: flex;
     justify-content: space-around;
     .navbar__list{
-      //display: inline-block;
       top: 26px;
-      //position: relative;
       &-item{
         margin-left: 30px;
       }
@@ -249,7 +234,6 @@
   }
   .container__menu{
     position: static;
-
   }
 }
 @media screen and (min-width: 993px) {
@@ -258,8 +242,10 @@
     padding-right: 90px;
     &__menu {
       position: absolute;
-      //right: 150px;
     }
+  }
+  .navbar__list{
+    margin-top: 0;
   }
   .purple__btn {
     position: relative;
@@ -269,29 +255,4 @@
    .container {
      width: 1200px;
    }
-
-  //.purple__btn {
-  //  font-family: $font-monserat;
-  //  color: #ffffff;
-  //  font-size: 16px;
-  //  font-weight: 700;
-  //  padding: 12px 0px;
-  //  width: 145px;
-  //  border-radius: 38px;
-  //  background-color: $violet;
-  //  text-align: center;
-  //  position: relative;
-  //  transition: .5s;
-  //  &:hover {
-  //    background-color: #ffffff;
-  //    color: $violet;
-  //  }
-  //}
-  //.container__menu {
-  //  display: flex;
-  //  justify-content: space-between;
-  //  align-items: center;
-  //  position: absolute;
-  //  right: 155px;
-  //}
 }
