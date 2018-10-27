@@ -1,7 +1,7 @@
 .pricing{
   padding-top: 73px;
   padding-bottom: 149px;
-  background: url("/src/img/back_pricing.png") no-repeat;
+  background: url("/dist/img/img_part1/back_pricing.png") no-repeat;
   background-size: cover;
   background-position: center;
   text-transform: uppercase;
@@ -9,28 +9,31 @@
   color: #ffffff;
   font-family: $font-montserrat;
   &__title{
-    font-weight: 700;
+    font-weight: $font-weight-bold;
     margin-bottom: 122px;
   }
   &__block{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     margin-top: 122px;
   }
   &__section{
     display: inline-block;
+    margin-bottom: 14px;
+    margin-left: 8px;
+    margin-right: 8px;
   }
-  &___haeder{
+  &__haeder{
       background-color: #735f6b;
       width: 257px;
   }
-  &___class{
-    font-weight: 400;
+  &__class{
+    font-weight: $font-weight-normal;
     font-size: 24px;
   }
   &__body{
-    //height: 457px;
     padding-bottom: 38px;
     padding-top: 32px;
     background-color: rgba(255, 255, 255, 0.11);
@@ -41,7 +44,7 @@
   }
   &__cost{
     font-size: 60px;
-    font-weight: 700;
+    font-weight: $font-weight-bold;
     margin-bottom: 24px;
     display: inline-block;
   }
@@ -50,12 +53,21 @@
     font-size: 14px;
     color: #968890;
     display: block;
+    line-height: 20px;
+    margin-bottom: 95px;
   }
-  &__line{
-    background-color:  #8d81ac;
+  &__month:after{
+    content: '';
     width: 60px;
-    height: 5px;
-    margin: 0 auto 31px;
+    border-bottom: 5px #8d81ac solid;
+    position: absolute;
+    display: block;
+    margin-left: 98px;
+    margin-top: 30px;
+  }
+  &__text-height{
+    height: 44px;
+    line-height: 44px;
   }
   &__text{
     font-size: 16px;
@@ -69,30 +81,52 @@
     display: inline-block;
     margin-top: 37px;
     transition: 0.5s;
+    line-height: 0;
   }
   .purchase__btn{
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: $font-weight-normal;
     font-size: 15px;
     text-decoration: none;
     color: white;
+    line-height: 18px;
   }
   &__btn:hover{
-    background-color: #9b8c9c;
+    background-color: #d0c9cf;
+    .purchase__btn{
+      color: #806d79;
+      font-weight: $font-weight-bold;
+    }
   }
 }
-
 .active{
   position: relative;
-
-.pricing___haeder{
-    background-color: #735f6b;
-    width: 257px;
+  .pricing__section{
+    margin-bottom: 14px;
+  }
+    .pricing__haeder{
+      background-color: #392a3a;
+      width: 299px;
+      height: 111px;
+    }
+  .pricing__class{
+    line-height: 111px;
+  }
+  .pricing__doll{
+    font-size: 82px;
+  }
+  .pricing__cost{
+    font-size: 82px;
+  }
+  .pricing__body{
+    padding-bottom: 47px;
+    padding-top: 15px;
+    background-color: rgba(0, 0, 0, 0.13);
+  }
+  .pricing__btn{
+    margin-top: 82px;
+  }
 }
-
-}
-
-
 
 
 
@@ -116,15 +150,16 @@
     font-size: 42px;
     padding-bottom: 47px;
   }
-
 }
 @media screen and (min-width: 993px){
   .pricing{
     font-size: 48px;
     padding-bottom: 122px;
   }
-
 }
 @media screen and (min-width: 1201px){
-
+  .pricing__block{
+    width: 1200px;
+    margin: 0 auto;
+  }
 }
