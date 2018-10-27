@@ -64,6 +64,7 @@
   display: inline-block;
   transition: 0.5s;
   cursor: pointer;
+  border: transparent 1px solid;
 }
 .buy__btn{
   font-family: $font-lato;
@@ -233,14 +234,15 @@
 }
 @media screen and (min-width: 993px) {
   .container {
-    padding-left: 90px;
-    padding-right: 90px;
+    padding-left: 10px;
+    padding-right: 10px;
     &__menu {
-      position: absolute;
+      position: static;
+      top: 0;
     }
   }
   .navbar__list{
-    margin-top: 0;
+    margin-top: -34px;
   }
   .purple__btn {
     position: relative;
@@ -248,6 +250,6 @@
 }
 @media screen and (min-width: 1201px) {
    .container {
-     width: 1200px;
+     max-width: 1300px;
    }
 }

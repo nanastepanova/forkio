@@ -104,7 +104,7 @@
   .pricing__section{
     margin-bottom: 14px;
   }
-    .pricing___haeder{
+    .pricing__haeder{
       background-color: #392a3a;
       width: 299px;
       height: 111px;
@@ -158,5 +158,8 @@
   }
 }
 @media screen and (min-width: 1201px){
-
+  .pricing__block{
+    width: 1200px;
+    margin: 0 auto;
+  }
 }
