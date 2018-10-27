@@ -1,0 +1,187 @@
+.footer {
+  background-color: $white;
+  @include flex-column;
+  padding: 40px 20px 0;
+
+    &__forkio {
+      margin-bottom: 36px;
+
+    &-logo {
+      font-family: $font-montserrat;
+      font-weight: $font-weight-normal;
+      color: $black;
+      font-size: 24px;
+      text-align: left;
+      text-transform: uppercase;
+
+      & img {
+        display: none;
+        width: 43px;
+        height: 41px;
+      }
+
+      &:after {
+        content: "io";
+        font-family: $font-montserrat;
+        font-weight: $font-weight-normal;
+        color: $violet-light;
+        font-size: 24px;
+        text-align: left;
+      }
+    }
+
+    &-text {
+      font-family: $font-montserrat;
+      font-weight: $font-weight-normal;
+      color: $grey;
+      font-size: 14px;
+      text-align: justify;
+      text-transform: initial;
+      margin-top: 36px;
+      line-height: 23px;
+
+    }
+  }
+
+  &__navigation {
+    font-family: $font-montserrat;
+    font-weight: $font-weight-normal;
+    color: $black;
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 36px;
+
+    & ul li {
+      font-family: $font-montserrat;
+      font-weight: $font-weight-normal;
+      font-size: 15px;
+      text-align: left;
+      margin-top: 15px;
+
+      & a {
+        color: $violet-light;
+
+        &:hover {
+          border-bottom: 1px solid $violet-light;
+        }
+      }
+    }
+  }
+  &__contacts {
+    margin-bottom: 36px;
+    & div:first-child {
+      font-family: $font-montserrat;
+      font-weight: $font-weight-bold;
+      color: $black;
+      font-size: 30px;
+      text-align: left;
+    }
+
+    & div:nth-child(2n) {
+      font-family: $font-montserrat;
+      font-weight: $font-weight-normal;
+      color: $grey;
+      font-size: 12px;
+      text-align: left;
+      margin-top: 15px;
+    }
+    & p {
+      font-family: $font-montserrat;
+      font-weight: $font-weight-normal;
+      color: $grey;
+      font-size: 14px;
+      text-align: left;
+      line-height: 23px;
+    }
+  }
+
+  &__address {
+    font-family: $font-montserrat;
+    font-weight: $font-weight-normal;
+    color: $black;
+    font-size: 16px;
+    text-align: left;
+    margin-top: 36px;
+    margin-bottom: 20px;
+
+  }
+
+  &__info {
+    margin-bottom: 36px;
+    & h3 {
+      font-family: $font-montserrat;
+      font-weight: $font-weight-normal;
+      color: $black;
+      font-size: 16px;
+      text-align: left;
+    }
+    & p {
+      font-family: $font-montserrat;
+      font-weight: $font-weight-normal;
+      color: $grey;
+      font-size: 14px;
+      text-align: justify;
+      margin-top: 24px;
+      line-height: 23px;
+    }
+  }
+}
+
+@media screen and (min-width: 401px) {
+  .footer {
+    @include flex-column;
+    padding: 40px 35px 0;
+
+    &__forkio-logo {
+      @include flex-row;
+    }
+
+    & img {
+      margin-right: 18px;
+      display: inline-block;
+      width: 43px;
+      height: 41px;
+    }
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .footer {
+    @include flex-row-between;
+    flex-wrap: wrap;
+    padding: 60px 38px 0;
+
+    &__forkio {
+      width: 45%;
+    }
+    &__navigation {
+      width: 45%;
+    }
+    &__contacts {
+      width: 45%;
+    }
+    &__info {
+      width: 45%;
+    }
+  }
+}
+
+@media screen and (min-width: 993px) {
+  .footer {
+    @include flex-row-between;
+    padding: 60px 90px 0;
+
+    &__forkio {
+      width: 24%;
+    }
+    &__navigation {
+      width: 13%;
+    }
+    &__contacts {
+      width: 24%;
+    }
+    &__info {
+      width: 24%;
+    }
+  }
+}
