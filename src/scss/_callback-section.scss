@@ -21,6 +21,7 @@
       @include flex-column-center;
     }
   }
+
 &__input {
     width: 290px;
     padding: 16px 26px;
@@ -34,15 +35,20 @@
     background-color: $white;
     border: none;
   }
+
+  &__input:focus {
+    outline: none;
+  }
+
   &__btn {
     width: 140px;
-    padding: 16px 32px;
+    padding: 16px 0;
     margin-top: 21px;
     font-family: $font-montserrat;
     font-weight: $font-weight-normal;
     color: $white;
     font-size: 13px;
-    text-align: left;
+    text-align: center;
     border-radius: 21px;
     background-color: $violet-light;
     border: none;

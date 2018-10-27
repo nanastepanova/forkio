@@ -10,7 +10,7 @@
   @include flex-column-center;
   &-box {
     &__user-info {
-      @include flex-row-center;
+      @include flex-row-between;
       @media screen and (max-width: 400px) {
         @include flex-column-center;
       }
