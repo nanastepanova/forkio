@@ -41,18 +41,20 @@
     font-weight: $font-weight-bold;
     display: inline-block;
     margin-left: 10px;
-    transition: 0.5s;
   }
 }
 .logo:hover{
-  color: white;
+  .navbar_logo{
+    content: url("/dist/img/img_part1/LogoHover.png");
+  }
+  .logo__text{
+    color: white;
+  }
 }
 .navbar__list-item:hover{
   color: white;
 }
-.logo__text:hover{
-  color: white;
-}
+
 
 .purple__btn{
   background-color: $violet-light;
@@ -76,13 +78,6 @@
   .buy__btn{
     color: $violet-light;
   }
-
-}
-.navbar_logo{
-  transition: 0.5s;
-}
-.navbar_logo:hover{
-  content: url("/dist/img/img_part1/LogoHover.png");
 }
 
 
