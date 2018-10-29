@@ -1,17 +1,10 @@
 .editor{
-
-  &__trial{
-    color:  $gray;
-    font-family: $font-montserrat;
-    text-align: center;
-    margin-top: 48px;
-  }
   &__title{
     color: $violet-dark;
     font-family: $font-montserrat;
     text-align: center;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: $font-weight-bold;
   }
   &__text{
     color: $black;
@@ -47,7 +40,7 @@
   &__text{
     display: inline-block;
     font-family: $font-montserrat;
-    font-weight: 700;
+    font-weight: $font-weight-bold;
   }
   &__count{
     display: flex;
@@ -101,13 +94,13 @@
 @media screen and (min-width: 360px){
   .editor{
     margin-bottom: 88px;
-    &__trial{
-      margin-top: 35px;
-    }
+    //&__trial{
+    //  margin-top: 35px;
+    //}
     &__title{
       font-size: 26px;
       line-height: 43px;
-       margin-top: 72px;
+       margin-top: 142px;
     }
     &__text{
       font-size: 14px;
@@ -135,7 +128,7 @@
   .editor{
     margin-bottom: 98px;
     &__title{
-      margin-top: 94px;
+      margin-top: 156px;
     }
     &__text{
       line-height: 30px;
@@ -147,7 +140,7 @@
     margin-bottom: 70px;
     &__title{
       font-size: 54px;
-      margin-top: 67px;
+      margin-top: 129px;
     }
     &__text{
       line-height: 30px;
