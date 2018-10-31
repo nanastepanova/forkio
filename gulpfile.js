@@ -19,9 +19,18 @@ gulp.task('clean', function(){
         .pipe(clean());
 })
 
-gulp.task('default', ['serve'])
+gulp.task('default', ['dev'])
 
-gulp.task('serve', function (){
+gulp.task('build', function (){
+    runSequence('clean', ['sass', 'autoprefixer', 'copy', 'jsMinify', 'img'], function(){
+
+        gulp.watch('./src/scss/*.scss',['sass', 'autoprefixer']).on('change', browserSync.reload);
+        gulp.watch('./src/js/*.js',['jsMinify']).on('change', browserSync.reload);
+        gulp.watch('./index.html').on('change', browserSync.reload)
+        gulp.watch('./src/img', ['img']).on('change', browserSync.reload)
+    })
+})
+gulp.task('dev', function (){
     runSequence('clean', ['sass', 'autoprefixer', 'copy', 'jsMinify', 'img'], function(){
         browserSync.init({
             server: "./"
@@ -35,13 +44,13 @@ gulp.task('serve', function (){
 })
 gulp.task('sass', function(){
     return gulp.src('./src/scss/main.scss')
-        // .pipe(concat('styles.scss'))
+    // .pipe(concat('styles.scss'))
         .pipe(sourcemaps.init())
         .pipe(sass())
         .pipe(sourcemaps.write())
         .pipe(rename('styles.css'))
         .pipe(gulp.dest('./dist/css'))
-    
+
 })
 
 gulp.task('autoprefixer', () =>
