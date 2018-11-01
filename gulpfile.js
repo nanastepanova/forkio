@@ -44,13 +44,13 @@ gulp.task('dev', function (){
 })
 gulp.task('sass', function(){
     return gulp.src('./src/scss/main.scss')
-        // .pipe(concat('styles.scss'))
+    // .pipe(concat('styles.scss'))
         .pipe(sourcemaps.init())
         .pipe(sass())
         .pipe(sourcemaps.write())
         .pipe(rename('styles.css'))
         .pipe(gulp.dest('./dist/css'))
-    
+
 })
 
 gulp.task('autoprefixer', () =>

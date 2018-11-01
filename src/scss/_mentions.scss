@@ -1,0 +1,102 @@
+.mentions{
+  padding-top: 100px;
+  //padding-bottom: 149px;
+  background: url("/dist/img/img_part1/fork-bg.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+
+
+  color: #ffffff;
+  font-family: $font-montserrat;
+}
+.section-title-three {
+  text-align: center;
+  &__heading {
+    font-size: 42px;
+    text-transform: uppercase;
+    font-weight: $font-weight-bold;
+    margin-bottom: 103px;
+  }
+}
+.mentions-list{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+.mentions-item{
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: center;
+  &__img{
+    display: flex;
+    margin: 0 auto;
+  }
+  &__text{
+    text-align: center;
+    margin-bottom: 113px;
+    font-size: 16px;
+    font-family: $font-latto;
+    font-style: italic;
+    line-height: 26px;
+    margin-top: 38px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+.section-bottom-three{
+  display: flex;
+  justify-content: center;
+  &__footer{
+    text-align: center;
+    font-size: 14px;
+    color: $violet;
+    max-width: 1080px;
+    line-height: 20px;
+    margin-bottom: 40px;
+    &:after{
+      content: '';
+      width: 1000px;
+      border-bottom: 1px $violet solid;
+      position: absolute;
+      margin-top: 40px;
+      left: calc(50% - 500px);
+    }
+  }
+}
+
+@media screen and (min-width: 360px){
+  .section-title-three {
+    &__heading {
+      font-size: 32px;
+    }
+  }
+  .section-bottom-three{
+    display: none;
+  }
+  .mentions-item {
+    width: 90%;
+    margin-left: 10px;
+  }
+}
+@media screen and (min-width: 401px){
+
+}
+@media screen and (min-width: 481px){
+  .mentions-item {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 993px){
+  .section-bottom-three{
+    display: flex;
+  }
+  .mentions-item {
+    width: 30%;
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 1201px){
+
+}

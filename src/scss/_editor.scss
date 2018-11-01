@@ -1,17 +1,10 @@
 .editor{
-
-  &__trial{
-    color:  $gray;
-    font-family: $font-montserrat;
-    text-align: center;
-    margin-top: 48px;
-  }
   &__title{
     color: $violet-dark;
     font-family: $font-montserrat;
     text-align: center;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: $font-weight-bold;
   }
   &__text{
     color: $black;
@@ -19,6 +12,7 @@
     text-align: center;
     font-size: 21px;
     margin-top: 38px;
+    margin-left: 3px;
   }
 }
 .interaction{
@@ -26,14 +20,14 @@
   justify-content: center;
   margin-top: 36px;
   flex-wrap: wrap;
-  &__btn{
-    width: 80px;
+  &__icon{
+    padding-left: 12px;
+    padding-right: 12px;
     height: 26px;
     border: #dedede 1px solid;
     background-color: $black-light;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    padding: 0 auto;
     margin-right: 0;
     display: flex;
     justify-content: center;
@@ -42,12 +36,14 @@
     transition: 0.5s;
   }
   .fas, .far{
-    margin-right: 3px;
+    color: $black;
   }
   &__text{
     display: inline-block;
     font-family: $font-montserrat;
-    font-weight: 700;
+    font-weight: $font-weight-bold;
+    color: $black;
+    margin-left: 3px;
   }
   &__count{
     display: flex;
@@ -62,6 +58,7 @@
     left: -1px;
   }
   &__number{
+    color: $black;
     font-family: $font-montserrat;
     margin: 0 5px;
     display: flex;
@@ -70,27 +67,19 @@
     cursor: pointer;
     transition: 0.5s;
   }
-  &__watch{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  &__star{
-    margin-right: 15px;
-    margin-left: 15px;
-    display: flex;
-    justify-content: center;
-
-  }
-  &__fork{
-    display: flex;
-    justify-content: center;
+  &__action{
+      display: flex;
+      justify-content: center;
+      margin-right: 15px;
+        &:last-child{
+          margin-right: 0;
+    }
   }
 
   &__number:hover{
     color: blue;
   }
-  &__btn:hover{
+  &__icon:hover{
     background-color: #b3aac4;
   }
 }
@@ -101,13 +90,13 @@
 @media screen and (min-width: 360px){
   .editor{
     margin-bottom: 88px;
-    &__trial{
-      margin-top: 35px;
-    }
+    //&__trial{
+    //  margin-top: 35px;
+    //}
     &__title{
       font-size: 26px;
       line-height: 43px;
-       margin-top: 72px;
+       margin-top: 142px;
     }
     &__text{
       font-size: 14px;
@@ -135,7 +124,7 @@
   .editor{
     margin-bottom: 98px;
     &__title{
-      margin-top: 94px;
+      margin-top: 156px;
     }
     &__text{
       line-height: 30px;
@@ -147,7 +136,7 @@
     margin-bottom: 70px;
     &__title{
       font-size: 54px;
-      margin-top: 67px;
+      margin-top: 129px;
     }
     &__text{
       line-height: 30px;

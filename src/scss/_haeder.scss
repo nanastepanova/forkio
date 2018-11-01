@@ -9,7 +9,7 @@
   padding-top: 30px;
   padding-bottom: 30px;
   font-family: $font-montserrat;
-  &__block{
+  &-block{
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
@@ -44,7 +44,7 @@
   }
 }
 .logo:hover{
-  .navbar_logo{
+  .logo__image{
     content: url("/dist/img/img_part1/LogoHover.png");
   }
   .logo__text{
@@ -56,15 +56,16 @@
 }
 
 
-.purple__btn{
+.btn_violet{
   background-color: $violet-light;
   padding-top: 12px;
   padding-bottom: 12px;
   border-radius: 20px;
-  display: inline-block;
+  //display: inline-block;
   transition: 0.5s;
   cursor: pointer;
   border: transparent 1px solid;
+  color: white;
 }
 .buy__btn{
   font-family: $font-lato;
@@ -74,12 +75,13 @@
 .menu {
   display: none;
 }
-.purple__btn:hover{
+.btn_violet:hover{
   background-color: white;
   .buy__btn{
     color: $violet-light;
   }
 }
+
 
 
 @media screen and (min-width: 360px) {
@@ -122,11 +124,9 @@
     }
 
   }
-  .navbar{
-    &__block{
+  .navbar-block{
       justify-content: space-between;
     }
-  }
   .container__menu{
     display: none;
   }
@@ -225,7 +225,7 @@
       }
     }
   }
-  .purple__btn{
+  .btn_violet{
     position: static;
   }
   .container__menu{
@@ -244,7 +244,7 @@
   .navbar__list{
     margin-top: -34px;
   }
-  .purple__btn {
+  .btn_violet {
     position: relative;
   }
 }
