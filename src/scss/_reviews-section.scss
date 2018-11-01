@@ -1,8 +1,16 @@
 .reviews {
   background-color: #ffffff;
-  padding-top: 40px;
-  padding-bottom: 42px;
-  .carousel__btn {
+  //padding-top: 40px;
+  //padding-bottom: 42px;
+  padding: 40px 25px 42px;
+  @media screen and (min-width: 481px) {
+    padding: 40px 74px 42px;
+  }
+  @media screen and (min-width: 993px) {
+    padding: 40px 70px 42px;
+  }
+  &__carousel {
+    @include flex-row-center;
   }
 }
 
@@ -10,9 +18,9 @@
   @include flex-column-center;
   &-box {
     &__user-info {
-      @include flex-row-center;
-      @media screen and (max-width: 400px) {
-        @include flex-column-center;
+      @include flex-column-center;
+      @media screen and (min-width: 401px) {
+        @include flex-row-center;
       }
     }
 
@@ -21,7 +29,8 @@
       height: 85px;
       border: 1px solid #ffffff;
       border-radius: 50%;
-      @media screen and (max-width: 400px) {
+      @media screen and (min-width: 401px) {
+        margin-right: 23px;
       }
     }
 
@@ -30,10 +39,9 @@
       font-weight: $font-weight-bold;
       color: $violet-dark;
       font-size: 24px;
-      @media screen and (max-width: 400px) {
-        margin-top: 25px;
-        text-align: center;
-      }
+      margin-top: 25px;
+      text-align: left;
+
     }
 
     &__user-login {
@@ -41,10 +49,8 @@
       font-weight: $font-weight-normal;
       color: $violet-light;
       font-size: 16px;
-      @media screen and (max-width: 400px) {
-        margin-top: 7px;
-        text-align: center;
-      }
+      margin-top: 7px;
+      text-align: left;
     }
 
     &__user-comment {
@@ -52,11 +58,9 @@
       font-weight: $font-weight-normal;
       color: $black;
       font-size: 17px;
-      @media screen and (max-width: 400px) {
-        margin-top: 23px;
-        text-align: center;
-        max-width: 50%;
-      }
+      margin-top: 23px;
+      text-align: center;
+      padding: 0 15px;
     }
 
     &__comment-time {
@@ -64,11 +68,15 @@
       font-weight: $font-weight-normal;
       color: $grey;
       font-size: 16px;
-      @media screen and (max-width: 400px) {
-        margin-top: 16px;
-        text-align: center;
-      }
+      margin-top: 16px;
+      text-align: center;
+
     }
+  }
+  &__btn {
+    width: 9px;
+    color: $grey;
+    @include flex-row;
   }
 }
 
@@ -81,9 +89,13 @@
 }
 
 .social-links {
-  @media screen and (max-width: 400px) {
+  @include flex-row-center;
+  flex-wrap: wrap;
+
+  & div {
     @include flex-column-center;
   }
+
   &__github {
     display: block;
     border: 1px solid $black-light;
@@ -97,9 +109,15 @@
     color: $black;
     font-size: 21px;
     position: relative;
-    @media screen and (max-width: 400px) {
-      width: 80%;
-      margin-top: 35px;
+    width: 280px;
+    margin: 30px 20px 0;
+    @media screen and (min-width: 481px) {
+      width: 240px;
+    }
+
+    &:hover {
+      background-color: #2b414d;
+      color: $white;
     }
   }
 
@@ -116,9 +134,16 @@
     color: #ffffff;
     font-size: 21px;
     position: relative;
-    @media screen and (max-width: 400px) {
-      width: 80%;
-      margin-top: 30px;
+    width: 280px;
+    margin: 30px 20px 0;
+    @media screen and (min-width: 481px) {
+      width: 240px;
+    }
+
+    &:hover {
+      background-color: #ffffff;
+      color: #26a6d1;
+      border: 1px solid #26a6d1;
     }
   }
 
@@ -129,15 +154,22 @@
     padding-top: 17px;
     padding-bottom: 18px;
     text-align: center;
-    background-color:  #3b5998;
+    background-color: #3b5998;
     font-family: $font-montserrat;
     font-weight: $font-weight-normal;
     color: #ffffff;
     font-size: 21px;
     position: relative;
-    @media screen and (max-width: 400px) {
-      width: 80%;
-      margin-top: 30px;
+    width: 280px;
+    margin: 30px 20px 0;
+    @media screen and (min-width: 481px) {
+      width: 240px;
+    }
+
+    &:hover {
+      background-color: #ffffff;
+      color: #3b5998;
+      border: 1px solid #3b5998;
     }
   }
   .followers {
@@ -145,20 +177,11 @@
     font-weight: $font-weight-normal;
     color: $grey;
     font-size: 14px;
-    @media screen and (max-width: 400px) {
-      margin-top: 18px;
-    }
+    margin-top: 18px;
+  }
 
-    }
-  .fa-github, .fa-twitter, .fa-facebook-f{
+  .fa-github, .fa-twitter, .fa-facebook-f {
     position: absolute;
     left: 20px;
   }
 }
-
-//@media screen and (max-width: 400px) {
-//  body {
-//    min-width: 320px;
-//    max-width: 400px;
-//  }
-//}

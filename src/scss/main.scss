@@ -1,6 +1,9 @@
-.container{
+.body {
   max-width: 1200px;
   min-width: 320px;
+}
+
+.container{
   width: 100%;
   margin: 0 auto;
   padding: 0 10px;
@@ -29,11 +32,17 @@ $white: #ffffff;
 
 @mixin flex-row-between {
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: space-between;
+
+}@mixin flex-row-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-@mixin flex-row-center {
+
+@mixin flex-center-center {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -45,6 +54,16 @@ $white: #ffffff;
   align-items: center;
 }
 
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-row {
+  display: flex;
+  align-items: center;
+}
+
 
 //   imports:
 
@@ -52,8 +71,9 @@ $white: #ffffff;
 @import "haeder";
 @import "haederHaed";
 @import "editor";
-@import "pricing";
+@import "features-section";
 @import "reviews-section";
+@import "pricing";
 @import "callback-section";
 @import "footer";
 @import "mentions";
