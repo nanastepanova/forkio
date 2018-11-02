@@ -3,34 +3,79 @@
   @include flex-column;
   padding: 40px 20px 0;
 
-    &__forkio {
-      margin-bottom: 36px;
+  @media screen and (min-width: 401px) {
+    @include flex-column;
+    padding: 40px 35px 0;
+  }
 
-    &-logo {
-      font-family: $font-montserrat;
-      font-weight: $font-weight-normal;
-      color: $black;
-      font-size: 24px;
-      text-align: left;
-      text-transform: uppercase;
+  @media screen and (min-width: 481px) {
+    @include flex-row-between;
+    flex-wrap: wrap;
+    padding: 60px 38px 0;
+  }
 
-      & img {
+  @media screen and (min-width: 993px) {
+    @include flex-row-between;
+    padding: 60px 90px 0;
+  }
+
+  .site-description {
+    margin-bottom: 36px;
+
+    @media screen and (min-width: 481px) {
+      width: 45%;
+    }
+
+    @media screen and (min-width: 993px) {
+      width: 24%;
+    }
+
+    .logo {
+      @media screen and (min-width: 401px) {
+        @include flex-row;
+
+      }
+
+      &__img {
         display: none;
         width: 43px;
         height: 41px;
+        @media screen and (min-width: 401px) {
+          margin-right: 18px;
+          display: inline-block;
+          width: 43px;
+          height: 41px;
+        }
       }
 
-      &:after {
-        content: "io";
+      &__text {
         font-family: $font-montserrat;
         font-weight: $font-weight-normal;
         color: $violet-light;
         font-size: 24px;
         text-align: left;
+        text-transform: uppercase;
+        margin-left: 0;
+
+        &:hover {
+          color: $black;
+        }
+      }
+
+      &__text_black {
+        font-family: $font-montserrat;
+        font-weight: $font-weight-normal;
+        color: $black;
+        font-size: 24px;
+        text-align: left;
+
+        &:hover {
+          color: $violet-light;
+        }
       }
     }
 
-    &-text {
+    &__text {
       font-family: $font-montserrat;
       font-weight: $font-weight-normal;
       color: $grey;
@@ -39,26 +84,39 @@
       text-transform: initial;
       margin-top: 36px;
       line-height: 23px;
-
     }
   }
 
-  &__navigation {
-    font-family: $font-montserrat;
-    font-weight: $font-weight-normal;
-    color: $black;
-    font-size: 16px;
-    text-align: left;
+  .footer-navigation {
     margin-bottom: 36px;
 
-    & ul li {
+    @media screen and (min-width: 481px) {
+      width: 45%;
+    }
+
+    @media screen and (min-width: 993px) {
+      width: 13%;
+    }
+
+    &__title {
       font-family: $font-montserrat;
       font-weight: $font-weight-normal;
-      font-size: 15px;
+      color: $black;
+      font-size: 16px;
       text-align: left;
-      margin-top: 15px;
+      margin-bottom: 36px;
+    }
 
-      & a {
+    .footer-nav {
+
+      &__item {
+        font-family: $font-montserrat;
+        font-weight: $font-weight-normal;
+        font-size: 15px;
+        text-align: left;
+        margin-top: 15px;
+      }
+      &__link {
         color: $violet-light;
 
         &:hover {
@@ -67,121 +125,76 @@
       }
     }
   }
-  &__contacts {
+
+  .site-contacts {
     margin-bottom: 36px;
-    & div:first-child {
-      font-family: $font-montserrat;
-      font-weight: $font-weight-bold;
-      color: $black;
-      font-size: 30px;
-      text-align: left;
+
+    @media screen and (min-width: 481px) {
+      width: 45%;
     }
 
-    & div:nth-child(2n) {
-      font-family: $font-montserrat;
-      font-weight: $font-weight-normal;
-      color: $grey;
-      font-size: 12px;
-      text-align: left;
-      margin-top: 15px;
+    @media screen and (min-width: 993px) {
+      width: 24%;
     }
-    & p {
-      font-family: $font-montserrat;
-      font-weight: $font-weight-normal;
-      color: $grey;
-      font-size: 14px;
-      text-align: left;
-      line-height: 23px;
+
+    .contact-phone {
+
+      &__number {
+        font-family: $font-montserrat;
+        font-weight: $font-weight-bold;
+        color: $black;
+        font-size: 30px;
+        text-align: left;
+      }
+      &__work-time {
+        font-family: $font-montserrat;
+        font-weight: $font-weight-normal;
+        color: $grey;
+        font-size: 12px;
+        text-align: left;
+        margin-top: 15px;
+      }
+    }
+    .contact-address {
+
+      &__city {
+        font-family: $font-montserrat;
+        font-weight: $font-weight-normal;
+        color: $black;
+        font-size: 16px;
+        text-align: left;
+        margin-top: 36px;
+        margin-bottom: 20px;
+
+        &-place {
+          font-family: $font-montserrat;
+          font-weight: $font-weight-normal;
+          color: $grey;
+          font-size: 14px;
+          text-align: left;
+          line-height: 23px;
+        }
+      }
     }
   }
 
-  &__address {
-    font-family: $font-montserrat;
-    font-weight: $font-weight-normal;
-    color: $black;
-    font-size: 16px;
-    text-align: left;
-    margin-top: 36px;
-    margin-bottom: 20px;
-
-  }
-
-  &__info {
+  .site-description {
     margin-bottom: 36px;
-    & h3 {
+
+    @media screen and (min-width: 481px) {
+      width: 45%;
+    }
+
+    @media screen and (min-width: 993px) {
+      width: 24%;
+    }
+
+    &__title {
       font-family: $font-montserrat;
       font-weight: $font-weight-normal;
       color: $black;
       font-size: 16px;
       text-align: left;
-    }
-    & p {
-      font-family: $font-montserrat;
-      font-weight: $font-weight-normal;
-      color: $grey;
-      font-size: 14px;
-      text-align: justify;
-      margin-top: 24px;
-      line-height: 23px;
-    }
-  }
-}
-
-@media screen and (min-width: 401px) {
-  .footer {
-    @include flex-column;
-    padding: 40px 35px 0;
-
-    &__forkio-logo {
-      @include flex-row;
-    }
-
-    & img {
-      margin-right: 18px;
-      display: inline-block;
-      width: 43px;
-      height: 41px;
-    }
-  }
-}
-
-@media screen and (min-width: 481px) {
-  .footer {
-    @include flex-row-between;
-    flex-wrap: wrap;
-    padding: 60px 38px 0;
-
-    &__forkio {
-      width: 45%;
-    }
-    &__navigation {
-      width: 45%;
-    }
-    &__contacts {
-      width: 45%;
-    }
-    &__info {
-      width: 45%;
-    }
-  }
-}
-
-@media screen and (min-width: 993px) {
-  .footer {
-    @include flex-row-between;
-    padding: 60px 90px 0;
-
-    &__forkio {
-      width: 24%;
-    }
-    &__navigation {
-      width: 13%;
-    }
-    &__contacts {
-      width: 24%;
-    }
-    &__info {
-      width: 24%;
     }
   }
 }

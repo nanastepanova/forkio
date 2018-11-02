@@ -4,7 +4,8 @@ var gulp = require('gulp');
 var clean = require('gulp-clean');
 var sourcemaps = require('gulp-sourcemaps');
 var sass = require('gulp-sass');
-// var minify = require('gulp-uglify');
+var jsMinify = require("gulp-js-minify");
+var csso = require('gulp-csso');
 var concat = require('gulp-concat');
 var imagemin = require('gulp-imagemin');
 var autoprefixer = require("gulp-autoprefixer");
@@ -12,7 +13,6 @@ var browserSync = require('browser-sync').create();
 var runSequence = require('run-sequence');
 var gulpCopy = require('gulp-copy');
 var rename = require('gulp-rename');
-var jsMinify = require("gulp-js-minify");
 
 gulp.task('clean', function(){
     return gulp.src('dist', {read: false})
@@ -44,13 +44,12 @@ gulp.task('dev', function (){
 })
 gulp.task('sass', function(){
     return gulp.src('./src/scss/main.scss')
-    // .pipe(concat('styles.scss'))
         .pipe(sourcemaps.init())
         .pipe(sass())
         .pipe(sourcemaps.write())
-        .pipe(rename('styles.css'))
+        .pipe(csso())
+        .pipe(rename('styles.min.css'))
         .pipe(gulp.dest('./dist/css'))
-
 })
 
 gulp.task('autoprefixer', () =>
@@ -59,7 +58,7 @@ gulp.task('autoprefixer', () =>
             browsers: ['last 2 versions'],
             cascade: false
         }))
-        .pipe(gulp.dest('dist'))
+        .pipe(gulp.dest('./dist/css'))
 );
 
 gulp.task('jsMinify', function(){
@@ -73,7 +72,7 @@ gulp.task('jsMinify', function(){
 
 gulp.task('copy', function(){
     return gulp.src('./src/scss/*.css')
-        .pipe(gulp.dest('./dist/css/'))
+        .pipe(gulp.dest('./dist/css'))
 
 })
 
