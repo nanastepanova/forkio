@@ -1,134 +1,155 @@
-.header__block{
+.header-block {
   background: url("/dist/img/img_part1/img.png") no-repeat;
   background-size: cover;
   background-position: center;
   padding-bottom: 487px;
+  &__title {
+    font-weight: $font-weight-bold;
+    color: white;
+    font-family: $font-montserrat;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &__headline {
+    text-align: center;
+    color: $violet-light;
+    font-family: $font-montserrat;
+  }
+  &__text {
+    color: #848e97;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $font-montserrat;
+  }
 }
-.header__title{
-  font-weight: $font-weight-bold;
-  color: white;
-  font-family: $font-montserrat;
-  text-transform: uppercase;
-  text-align: center;
-}
-.header__headline{
-  text-align: center;
-  color: $violet-light;
-  font-family: $font-montserrat;
-}
-.header__text{
-  color:  #848e97;
-  text-align: center;
-  text-transform: uppercase;
-  font-family: $font-montserrat;
-}
-.download__btn{
+.b-download-btn{
   font-family: $font-montserrat;
   font-weight: $font-weight-bold;
   color: #ffffff;
   font-size: 21px;
-  margin: 23px 64px;
+  margin: 0 auto;
   text-decoration: none;
   transition: 0.5s;
-
 }
-.centre__btn{
+.btn{
   display: flex;
-  justify-content: center;
+  flex-flow: column;
+  align-items: center;
   position: relative;
+  &_download{
+    text-align: center;
+  }
 }
-
-.purple__btn:hover{
+.btn_violet:hover{
   background-color: white;
   border: $violet-light 1px solid;
-    .download__btn{
-    color: $violet-light;
-  }
-
+  color: $violet-light;
 }
 
+.b-download-btn__info{
+  display: block;
+  color:  $gray;
+  font-family: $font-montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
 
 @media screen and (min-width: 360px) {
-  .header__block{
+  .header-block {
     padding-top: 43px;
     padding-bottom: 390px;
-    .header__title{
+    &__title {
       font-size: 48px;
     }
-  }
-  .header__headline{
-    margin-top: 20px;
-    font-size: 18px;
-    line-height: 30px;
-  }
-  .header__text{
-    margin-top: 20px;
-    font-size: 14px;
-  }
-  .download__btn{
-    font-size: 18px;
-    margin: 16px 32px;
-  }
-  .centre__btn{
-    top: 411px;
-  }
-}
-@media screen and (min-width: 401px) {
-  .header__block{
-    padding-top: 101px;
-    padding-bottom: 454px;
-    .header__title{
-      font-size: 54px;
+    &__headline {
+      margin-top: 20px;
+      font-size: 18px;
+      line-height: 30px;
+    }
+    &__text {
+      margin-top: 20px;
+      font-size: 14px;
     }
   }
-  .header__headline{
-    margin-top: 35px;
-    font-size: 20px;
-    line-height: 30px;
+  .b-download-btn{
+    font-size: 18px;
   }
-  .header__text{
-    margin-top: 23px;
-    font-size: 16px;
+  .b-download-btn__info{
+    margin-top: 13px;
   }
-  .centre__btn{
-    top: 475px;
+
+  .btn{
+    top: 445px;
+    &_download{
+      width: 290px;
+      text-align: center;
+    }
+}
+}
+@media screen and (min-width: 401px) {
+  .header-block {
+    padding-top: 101px;
+    padding-bottom: 454px;
+    &__title {
+      font-size: 54px;
+    }
+    &__headline {
+      margin-top: 35px;
+      font-size: 20px;
+      line-height: 30px;
+    }
+    &__text {
+      margin-top: 23px;
+      font-size: 16px;
+    }
+  }
+  .b-download-btn__info{
+    margin-top: 19px;
+  }
+  .btn{
+    top: 510px;
+    &_download{
+      width: 390px;
+      text-align: center;
+    }
   }
 }
 @media screen and (min-width: 481px) {
-  .header__block{
+  .header-block {
     padding-top: 50px;
-    .header__title{
+    &__title {
       font-size: 72px;
     }
-  }
-  .header__headline{
-    margin-top: 26px;
-    font-size: 24px;
-  }
-  .header__text{
-    margin-top: 20px;
-    font-size: 14px;
+    &__headline {
+      margin-top: 26px;
+      font-size: 24px;
+    }
+    &__text {
+      margin-top: 20px;
+      font-size: 14px;
+    }
   }
 }
 @media screen and (min-width: 993px) {
 
-  .header__block{
+  .header-block {
     padding-top: 60px;
-    .header__title{
+    &__title {
       font-size: 82px;
     }
-  }
-  .header__headline{
-    margin-top: 18px;
-    font-size: 30px;
-  }
-  .header__text{
-    margin-top: 18px;
-    font-size: 16px;
+    &__headline {
+      margin-top: 18px;
+      font-size: 30px;
+    }
+    &__text {
+      margin-top: 18px;
+      font-size: 16px;
+    }
   }
 }
 
 @media screen and (min-width: 1201px) {
-  .header__title{
+  .header-block__title{
   }
 }
