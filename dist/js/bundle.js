@@ -22,13 +22,7 @@ $(document).ready(function () {
   // $('.pricing__section').click(function () {
   //     $($('.pricing__section')).toggleClass('active');
   // });
-});
 
-
-
-
-
-$(function ourServices() {
   $(".pricing__section").click(function () {
     let tabs = $(".pricing__section");
 
